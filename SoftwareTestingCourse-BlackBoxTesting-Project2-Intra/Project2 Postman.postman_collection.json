@@ -1,0 +1,486 @@
+{
+	"info": {
+		"_postman_id": "69268da1-a5f0-4f92-a9ee-1f7647a6b276",
+		"name": "Project2 Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26301923"
+	},
+	"item": [
+		{
+			"name": "GET ALL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Get all test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.length).to.equal(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/student"
+			},
+			"response": []
+		},
+		{
+			"name": "ADD",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Add test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.studentId).to.eql(1);\r",
+							"    pm.expect(responseJson.studentId).to.be.a('number');\r",
+							"    pm.expect(responseJson.studentName).to.eql('Novica');\r",
+							"    pm.expect(responseJson.studentName).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentEmail).to.eql('novica@mail.com');\r",
+							"    pm.expect(responseJson.studentEmail).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentBranch).to.eql('branch');\r",
+							"    pm.expect(responseJson.studentBranch).to.be.a('string');\r",
+							"   \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"studentId\":1,\r\n        \"studentName\": \"Novica\",\r\n        \"studentEmail\": \"novica@mail.com\",\r\n        \"studentBranch\": \"branch\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/student"
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Get 1 test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.studentId).to.eql(1);\r",
+							"    pm.expect(responseJson.studentId).to.be.a('number');\r",
+							"    pm.expect(responseJson.studentName).to.eql('Novica');\r",
+							"    pm.expect(responseJson.studentName).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentEmail).to.eql('novica@mail.com');\r",
+							"    pm.expect(responseJson.studentEmail).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentBranch).to.eql('branch');\r",
+							"    pm.expect(responseJson.studentBranch).to.be.a('string');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT NAME",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Put name test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.studentId).to.eql(1);\r",
+							"    pm.expect(responseJson.studentId).to.be.a('number');\r",
+							"    pm.expect(responseJson.studentName).to.eql('Novicaa');\r",
+							"    pm.expect(responseJson.studentName).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentEmail).to.eql('novica@mail.com');\r",
+							"    pm.expect(responseJson.studentEmail).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentBrach).to.eql('branch');\r",
+							"    pm.expect(responseJson.studentBrach).to.be.a('string');\r",
+							"   \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"studentId\":1,\r\n        \"studentName\": \"Novicaa\",\r\n        \"studentEmail\": \"novica@mail.com\",\r\n        \"studentBranch\": \"branch\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT EMAIL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Put email test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.studentId).to.eql(1);\r",
+							"    pm.expect(responseJson.studentId).to.be.a('number');\r",
+							"    pm.expect(responseJson.studentName).to.eql('Novica');\r",
+							"    pm.expect(responseJson.studentName).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentEmail).to.eql('novica2@mail.com');\r",
+							"    pm.expect(responseJson.studentEmail).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentBranch).to.eql('branch');\r",
+							"    pm.expect(responseJson.studentBranch).to.be.a('string');\r",
+							"   \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"studentId\":1,\r\n        \"studentName\": \"Novica\",\r\n        \"studentEmail\": \"novica2@mail.com\",\r\n        \"studentBrach\": \"branch\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT BRANCH",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Put branch test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.studentId).to.eql(1);\r",
+							"    pm.expect(responseJson.studentId).to.be.a('number');\r",
+							"    pm.expect(responseJson.studentName).to.eql('Novica');\r",
+							"    pm.expect(responseJson.studentName).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentEmail).to.eql('novica@mail.com');\r",
+							"    pm.expect(responseJson.studentEmail).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentBranch).to.eql('branch2');\r",
+							"    pm.expect(responseJson.studentBranch).to.be.a('string');\r",
+							"   \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"studentId\":1,\r\n        \"studentName\": \"Novica\",\r\n        \"studentEmail\": \"novica@mail.com\",\r\n        \"studentBrach\": \"branch2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Delete test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"   \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"studentId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Get after delete test\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"   \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE WITHOUT ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Delete without id test\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"   \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\":1,\r\n        \"name\": \"Na Drini cuprijaa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT WITHOUT ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Put without id test\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"   \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"studentId\":1,\r\n        \"studentName\": \"Na Drini cuprijaa\",\r\n        \"studentEmail\": \"novicaa@mail.com\",\r\n        \"studentBranch\": \"abc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "ADD 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Add test 2\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.studentId).to.eql(1);\r",
+							"    pm.expect(responseJson.studentId).to.be.a('number');\r",
+							"    pm.expect(responseJson.studentName).to.eql('student1');\r",
+							"    pm.expect(responseJson.studentName).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentEmail).to.eql('student1@mail.com');\r",
+							"    pm.expect(responseJson.studentEmail).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentBranch).to.eql('branch1');\r",
+							"    pm.expect(responseJson.studentBranch).to.be.a('string');\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"studentName\": \"student1\",\r\n        \"studentEmail\": \"student1@mail.com\",\r\n        \"studentBranch\": \"branch1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/student"
+			},
+			"response": []
+		},
+		{
+			"name": "ADD 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Add test 3\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.studentId).to.eql(2);\r",
+							"    pm.expect(responseJson.studentId).to.be.a('number');\r",
+							"    pm.expect(responseJson.studentName).to.eql('student2');\r",
+							"    pm.expect(responseJson.studentName).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentEmail).to.eql('student2@mail.com');\r",
+							"    pm.expect(responseJson.studentEmail).to.be.a('string');\r",
+							"    pm.expect(responseJson.studentBranch).to.eql('branch2');\r",
+							"    pm.expect(responseJson.studentBranch).to.be.a('string');\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"studentId\":2,\r\n        \"studentName\": \"student2\",\r\n        \"studentEmail\": \"student2@mail.com\",\r\n        \"studentBranch\": \"branch2\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/student"
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL AFTER ADDED TWO Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Get all test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    const responseJson = pm.response.json();\r",
+							"    pm.expect(responseJson.length).to.equal(2);\r",
+							"   \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/student/"
+			},
+			"response": []
+		}
+	]
+}

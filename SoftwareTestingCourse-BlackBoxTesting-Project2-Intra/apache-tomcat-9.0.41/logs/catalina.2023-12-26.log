@@ -1,0 +1,48 @@
+26-Dec-2023 14:07:50.849 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+26-Dec-2023 14:08:01.131 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.41
+26-Dec-2023 14:08:01.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 3 2020 11:43:00 UTC
+26-Dec-2023 14:08:01.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.41.0
+26-Dec-2023 14:08:01.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+26-Dec-2023 14:08:01.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+26-Dec-2023 14:08:01.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Dec-2023 14:08:01.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.13
+26-Dec-2023 14:08:01.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.13+10-LTS-370
+26-Dec-2023 14:08:01.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Dec-2023 14:08:01.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41
+26-Dec-2023 14:08:01.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41
+26-Dec-2023 14:08:01.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+26-Dec-2023 14:08:01.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+26-Dec-2023 14:08:01.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+26-Dec-2023 14:08:01.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\conf\logging.properties
+26-Dec-2023 14:08:01.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Dec-2023 14:08:01.155 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Dec-2023 14:08:01.155 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Dec-2023 14:08:01.156 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Dec-2023 14:08:01.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41
+26-Dec-2023 14:08:01.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41
+26-Dec-2023 14:08:01.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\temp
+26-Dec-2023 14:08:01.163 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+26-Dec-2023 14:08:01.163 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+26-Dec-2023 14:08:01.164 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+26-Dec-2023 14:08:01.172 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+26-Dec-2023 14:08:01.536 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-4200"]
+26-Dec-2023 14:08:01.894 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1020] milliseconds
+26-Dec-2023 14:08:01.970 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Dec-2023 14:08:01.970 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.41]
+26-Dec-2023 14:08:01.984 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\webapps\docs]
+26-Dec-2023 14:08:02.577 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [310] milliseconds.
+26-Dec-2023 14:08:02.619 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\webapps\docs] has finished in [635] ms
+26-Dec-2023 14:08:02.620 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\webapps\examples]
+26-Dec-2023 14:08:03.086 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\webapps\examples] has finished in [466] ms
+26-Dec-2023 14:08:03.087 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\webapps\host-manager]
+26-Dec-2023 14:08:03.137 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\webapps\host-manager] has finished in [51] ms
+26-Dec-2023 14:08:03.138 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\webapps\manager]
+26-Dec-2023 14:08:03.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\webapps\manager] has finished in [53] ms
+26-Dec-2023 14:08:03.192 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\webapps\ROOT]
+26-Dec-2023 14:08:03.239 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\apache-tomcat-9.0.41\webapps\ROOT] has finished in [46] ms
+26-Dec-2023 14:08:03.246 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-4200"]
+26-Dec-2023 14:08:03.260 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1364] milliseconds
+26-Dec-2023 17:53:26.200 INFO [Thread-3] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-4200"]
+26-Dec-2023 17:53:26.532 INFO [Thread-3] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+26-Dec-2023 17:53:26.630 INFO [Thread-3] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-4200"]
+26-Dec-2023 17:53:26.644 INFO [Thread-3] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-4200"]
