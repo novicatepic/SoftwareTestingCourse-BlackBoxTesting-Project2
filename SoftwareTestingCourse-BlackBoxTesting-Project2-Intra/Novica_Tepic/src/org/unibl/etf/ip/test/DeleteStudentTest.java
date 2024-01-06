@@ -83,8 +83,16 @@ public void deleteStudent() {
  vars.put("sizeBefore", driver.findElements(By.xpath("//*[@id=\"DataTables_Table_1\"]/tbody/tr")).size());
  assertEquals(vars.get("sizeBefore").toString(), "1");
  driver.findElement(By.cssSelector(".fa")).click();
+ 
+ //without thread sleep, test doesn't work...
+ try {
+	 Thread.sleep(1000);
+ } catch(InterruptedException e) {
+	 e.printStackTrace();
+ }
+ 
  vars.put("size", driver.findElements(By.xpath("//*[@id=\"DataTables_Table_1\"]/tbody/tr")).size());
- assertEquals("0", vars.get("size").toString());
+ assertEquals(0, vars.get("size"));
 }
 }
 

@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "69268da1-a5f0-4f92-a9ee-1f7647a6b276",
 		"name": "Project2 Postman",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26301923"
 	},
 	"item": [
@@ -26,7 +26,17 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8080/student"
+				"url": {
+					"raw": "http://localhost:8080/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				}
 			},
 			"response": []
 		},
@@ -68,7 +78,17 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/student"
+				"url": {
+					"raw": "http://localhost:8080/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				}
 			},
 			"response": []
 		},
@@ -112,7 +132,18 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/student/1"
+				"url": {
+					"raw": "http://localhost:8080/student/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -154,7 +185,18 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/student/1"
+				"url": {
+					"raw": "http://localhost:8080/student/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -196,7 +238,18 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/student/1"
+				"url": {
+					"raw": "http://localhost:8080/student/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -238,7 +291,18 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/student/1"
+				"url": {
+					"raw": "http://localhost:8080/student/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -270,7 +334,18 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/student/1"
+				"url": {
+					"raw": "http://localhost:8080/student/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -305,7 +380,18 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/student/1"
+				"url": {
+					"raw": "http://localhost:8080/student/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -337,7 +423,18 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/student/1"
+				"url": {
+					"raw": "http://localhost:8080/student/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -369,7 +466,18 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/student/1"
+				"url": {
+					"raw": "http://localhost:8080/student/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -384,7 +492,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"\r",
 							"const responseJson = pm.response.json();\r",
-							"    pm.expect(responseJson.studentId).to.eql(1);\r",
+							"    pm.expect(responseJson.studentId).to.eql(2);\r",
 							"    pm.expect(responseJson.studentId).to.be.a('number');\r",
 							"    pm.expect(responseJson.studentName).to.eql('student1');\r",
 							"    pm.expect(responseJson.studentName).to.be.a('string');\r",
@@ -411,7 +519,17 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/student"
+				"url": {
+					"raw": "http://localhost:8080/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				}
 			},
 			"response": []
 		},
@@ -426,7 +544,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"\r",
 							"    const responseJson = pm.response.json();\r",
-							"    pm.expect(responseJson.studentId).to.eql(2);\r",
+							"    pm.expect(responseJson.studentId).to.eql(3);\r",
 							"    pm.expect(responseJson.studentId).to.be.a('number');\r",
 							"    pm.expect(responseJson.studentName).to.eql('student2');\r",
 							"    pm.expect(responseJson.studentName).to.be.a('string');\r",
@@ -453,12 +571,22 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/student"
+				"url": {
+					"raw": "http://localhost:8080/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				}
 			},
 			"response": []
 		},
 		{
-			"name": "GET ALL AFTER ADDED TWO Copy",
+			"name": "GET ALL AFTER ADDED TWO",
 			"event": [
 				{
 					"listen": "test",
@@ -478,7 +606,18 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8080/student/"
+				"url": {
+					"raw": "http://localhost:8080/student/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						""
+					]
+				}
 			},
 			"response": []
 		}
