@@ -85,7 +85,7 @@ public class StudentUpdateTest {
     driver.get("http://localhost:4200/");
     driver.manage().window().setSize(new Dimension(1062, 812));
     vars.put("x", driver.findElement(By.cssSelector("td:nth-child(2)")).getText());
-    assertEquals("M-Tech", vars.get("x").toString());
+    assertEquals("student1@mail.com", vars.get("x").toString());
   }
   
   @DisplayName("Update Branch Test")
@@ -148,5 +148,20 @@ public class StudentUpdateTest {
     assertEquals("novimejl@mail.com", vars.get("x").toString());
   }
   
+  @DisplayName("ZUpdate - Delete Left")
+  @Test
+  public void updateStudent5() {
+  	driver.get("http://localhost:4200/");
+      driver.manage().window().setSize(new Dimension(1062, 812));
+      driver.findElement(By.cssSelector(".odd:nth-child(1) .fa")).click();
+
+      try {
+      	Thread.sleep(2000);
+      } catch(InterruptedException ex) {
+      	ex.printStackTrace();
+      }
+      vars.put("size", driver.findElements(By.xpath("//*[@id=\"DataTables_Table_1\"]/tbody/tr")).size());
+      assertEquals(0, vars.get("size"));
+  }
 
 }

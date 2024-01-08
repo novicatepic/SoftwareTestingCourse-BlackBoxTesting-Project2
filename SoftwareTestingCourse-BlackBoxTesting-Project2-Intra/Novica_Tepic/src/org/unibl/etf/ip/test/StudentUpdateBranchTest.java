@@ -82,5 +82,22 @@ public void updtStu() {
  vars.put("x", driver.findElement(By.xpath("//*[@id=\"DataTables_Table_1\"]/tbody/tr/td[1]")).getText());
  assertEquals("st1", vars.get("x").toString());
 }
+
+@DisplayName("Update branch after insert - Delete")
+@Test
+public void updtStu2() {
+	driver.get("http://localhost:4200/");
+    driver.manage().window().setSize(new Dimension(1062, 812));
+    driver.findElement(By.cssSelector(".odd:nth-child(1) .fa")).click();
+
+    try {
+    	Thread.sleep(2000);
+    } catch(InterruptedException ex) {
+    	ex.printStackTrace();
+    }
+    vars.put("size", driver.findElements(By.xpath("//*[@id=\"DataTables_Table_1\"]/tbody/tr")).size());
+    assertEquals(0, vars.get("size"));
+}
+
 }
 

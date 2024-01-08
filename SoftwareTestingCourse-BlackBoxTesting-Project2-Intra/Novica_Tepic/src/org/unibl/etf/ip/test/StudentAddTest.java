@@ -113,6 +113,33 @@ public void studentAdd3() {
     assertEquals("MCA", vars.get("x").toString());
 }
 
+@DisplayName("Delete Students Left")
+@Test
+public void studentAdd4() {
+	driver.get("http://localhost:4200/");
+    driver.manage().window().setSize(new Dimension(1062, 812));
+    driver.findElement(By.cssSelector(".odd:nth-child(1) .fa")).click();
+    try {
+    	Thread.sleep(1000);
+    } catch(InterruptedException ex) {
+    	ex.printStackTrace();
+    }
+    driver.findElement(By.cssSelector("tr:nth-child(1) .fa")).click();
+    try {
+    	Thread.sleep(1000);
+    } catch(InterruptedException ex) {
+    	ex.printStackTrace();
+    }
+    driver.findElement(By.cssSelector(".fa")).click();
+    try {
+    	Thread.sleep(2000);
+    } catch(InterruptedException ex) {
+    	ex.printStackTrace();
+    }
+    vars.put("size", driver.findElements(By.xpath("//*[@id=\"DataTables_Table_1\"]/tbody/tr")).size());
+    assertEquals(0, vars.get("size"));
+}
+
 }
 
 
