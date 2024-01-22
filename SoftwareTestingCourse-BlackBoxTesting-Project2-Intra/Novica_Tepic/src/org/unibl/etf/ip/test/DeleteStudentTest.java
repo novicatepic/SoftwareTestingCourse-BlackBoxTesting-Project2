@@ -79,6 +79,13 @@ public void deleteStudent() {
    dropdown.findElement(By.xpath("//option[. = 'B-Tech']")).click();
  }
  driver.findElement(By.cssSelector(".btn-success")).click();
+ 
+ try {
+	 Thread.sleep(1000);
+ } catch(InterruptedException e) {
+	 e.printStackTrace();
+ }
+ 
  driver.findElement(By.linkText("View Student")).click();
  vars.put("sizeBefore", driver.findElements(By.xpath("//*[@id=\"DataTables_Table_1\"]/tbody/tr")).size());
  assertEquals(vars.get("sizeBefore").toString(), "1");

@@ -1,0 +1,47 @@
+21-Jan-2024 13:24:30.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.41
+21-Jan-2024 13:24:30.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 3 2020 11:43:00 UTC
+21-Jan-2024 13:24:30.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.41.0
+21-Jan-2024 13:24:30.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+21-Jan-2024 13:24:30.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+21-Jan-2024 13:24:30.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Jan-2024 13:24:30.424 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-11.0.13
+21-Jan-2024 13:24:30.425 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.13+10-LTS-370
+21-Jan-2024 13:24:30.425 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+21-Jan-2024 13:24:30.426 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41
+21-Jan-2024 13:24:30.426 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41
+21-Jan-2024 13:24:30.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+21-Jan-2024 13:24:30.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+21-Jan-2024 13:24:30.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Jan-2024 13:24:30.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\conf\logging.properties
+21-Jan-2024 13:24:30.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jan-2024 13:24:30.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+21-Jan-2024 13:24:30.454 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Jan-2024 13:24:30.455 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+21-Jan-2024 13:24:30.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41
+21-Jan-2024 13:24:30.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41
+21-Jan-2024 13:24:30.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\temp
+21-Jan-2024 13:24:30.468 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+21-Jan-2024 13:24:30.468 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+21-Jan-2024 13:24:30.469 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+21-Jan-2024 13:24:30.492 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+21-Jan-2024 13:24:31.124 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-4200"]
+21-Jan-2024 13:24:31.750 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1770] milliseconds
+21-Jan-2024 13:24:31.882 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+21-Jan-2024 13:24:31.883 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.41]
+21-Jan-2024 13:24:31.909 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\webapps\docs]
+21-Jan-2024 13:24:32.804 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [379] milliseconds.
+21-Jan-2024 13:24:32.858 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\webapps\docs] has finished in [949] ms
+21-Jan-2024 13:24:32.859 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\webapps\examples]
+21-Jan-2024 13:24:33.756 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\webapps\examples] has finished in [897] ms
+21-Jan-2024 13:24:33.758 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\webapps\host-manager]
+21-Jan-2024 13:24:33.866 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\webapps\host-manager] has finished in [108] ms
+21-Jan-2024 13:24:33.868 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\webapps\manager]
+21-Jan-2024 13:24:33.959 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\webapps\manager] has finished in [91] ms
+21-Jan-2024 13:24:33.961 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\webapps\ROOT]
+21-Jan-2024 13:24:34.057 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\User\Desktop\SoftwareTestingCourse-BlackBoxTesting-Project2\SoftwareTestingCourse-BlackBoxTesting-Project2-Intra\apache-tomcat-9.0.41\webapps\ROOT] has finished in [95] ms
+21-Jan-2024 13:24:34.067 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-4200"]
+21-Jan-2024 13:24:34.091 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2340] milliseconds
+21-Jan-2024 13:29:38.260 INFO [Thread-3] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-4200"]
+21-Jan-2024 13:29:38.569 INFO [Thread-3] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+21-Jan-2024 13:29:38.622 INFO [Thread-3] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-4200"]
+21-Jan-2024 13:29:38.629 INFO [Thread-3] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-4200"]
